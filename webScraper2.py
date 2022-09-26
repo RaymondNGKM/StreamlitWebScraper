@@ -4,7 +4,8 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-st.title('Python WebScraper')
+st.set_page_config('Python Webscraper', ':mag:', layout='wide')
+st.title(':mag:' + " " + 'Python WebScraper')
 
 url = st.text_input('Please insert url:', key=1)
 st.write('Website:', url)
@@ -36,3 +37,13 @@ with st.expander('Click to view:'):
     ##st.markdown(f"<a href=https://quotes.toscrape.com{link['href']}>{author}</a>", unsafe_allow_html=True)
     ##st.code(f"https://quotes.toscrape.com{link['href']}")
     ##quote_file.append([text,author,link['href']])
+
+# --- HIDE STREAMLIT STYLE ---
+hide_st_style = """
+                <style>
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                header {visibility: hidden;}
+                </style>
+                """
+st.markdown(hide_st_style, unsafe_allow_html=True)
