@@ -1,6 +1,6 @@
 import difflib
 import streamlit as st
-import pandas as pd
+##import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
