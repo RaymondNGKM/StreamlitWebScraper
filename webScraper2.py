@@ -9,7 +9,7 @@ st.title(':mag:' + " " + 'Python WebScraper')
 
 tab1, tab2 = st.tabs(['WebScraper 1','WebScraper 2'])
 
-with tab1:
+with tab2:
     st.title('Sample Of WebScraper Application:')
     tag = st.selectbox('Choose a topic', ['love', 'humor','life','books','world','value'])
     generate = st.button('Create CSV File')
@@ -40,7 +40,7 @@ with tab1:
         except:
             st.write('Loading...')
 
-with tab2:
+with tab1:
     st.title('WebScraping A Website:')
     url = st.text_input('Please insert url:', key=1)
     st.write('Website:', url)
